@@ -78,7 +78,7 @@ git commit  -m  "Implement add function in main.py"
 git branch  bugFix
 ```
 
-![screenshort](img\image.png)
+![screenshort](img/image.png)
 
 2. **Switch to the `bugFix` Branch**
 
@@ -86,7 +86,7 @@ git branch  bugFix
 git checkout  bugFix
 ```
 
-![screenshort](img\image-1.png)
+![screenshort](img/image-1.png)
 
 3. **Make a Commit on `bugFix`**
 
@@ -96,7 +96,7 @@ git add  main.py
 git commit  -m  "BugFix: Add print statement for add function"
 ```
 
-![screenshort](img\image-2.png)
+![screenshort](img/image-2.png)
 
 ### 1.3 Merging in Git
 
@@ -108,7 +108,7 @@ git commit  -m  "BugFix: Add print statement for add function"
 git checkout  -b  bugFix
 ```
 
-![screenshort](img\image-1.png)
+![screenshort](img/image-1.png)
 
 2. **Make a Commit on `bugFix`**
 
@@ -118,7 +118,7 @@ git add  main.py
 git commit  -m  "BugFix: Add print statement for add function"
 ```
 
-![screenshort](img\image-2.png)
+![screenshort](img/image-2.png)
 
 3. **Switch Back to `main` Branch**
 
@@ -126,7 +126,7 @@ git commit  -m  "BugFix: Add print statement for add function"
 git checkout  main
 ```
 
-![screenshort](img\image-3.png)
+![screenshort](img/image-3.png)
 
 4. **Make a Commit on `main`**
 
@@ -137,7 +137,7 @@ git add  main.py
 git commit  -m  "Add subtract function in main.py"
 ```
 
-![screenshort](img\image-4.png)
+![screenshort](img/image-4.png)
 
 5. **Merge `bugFix` into `main`**
 
@@ -145,7 +145,7 @@ git commit  -m  "Add subtract function in main.py"
 git merge  bugFix
 ```
 
-![alt_text](img\image-5.png)
+![screenshort](img/image-5.png)
 
 ### **1.4 Rebase Introduction**
 
@@ -157,7 +157,7 @@ git merge  bugFix
 git checkout -b bugFix
 ```
 
-![screenshort](img\image-1.png)
+![screenshort](img/image-1.png)
 
 2. **Make a Commit on `bugFix`**
 
@@ -167,7 +167,7 @@ git add main.py
 git commit -m "BugFix: Add another print statement for add function"
 ```
 
-![screenshort](img\image-2.png)
+![screenshort](img/image-2.png)
 
 3. **Switch Back to `main` Branch and Make a Commit**
 
@@ -179,7 +179,7 @@ git add main.py
 git commit -m "Add multiply function in main.py"
 ```
 
-![screenshort](img\image-4.png)
+![screenshort](img/image-4.png)
 
 4. **Switch Back to `bugFix` Branch and Rebase onto `main`**
 
@@ -188,7 +188,7 @@ git checkout bugFix
 git rebase main
 ```
 
-![screenshort](img\image-6.png)
+![screenshort](img/image-6.png)
 
 ## 2. Advanced Git Operations
 
@@ -208,7 +208,7 @@ git log --online
 git checkout C4
 ```
 
-![screenshort](img\image-7.png)
+![screenshort](img/image-7.png)
 
 ### **2.2 Relative Refs (^)**
 
@@ -220,8 +220,7 @@ git checkout C4
 git checkout C4^
 ```
 
-![screenshort](img\image-8.png)
-
+![screenshort](img/image-8.png)
 ### **2.3 Relative Refs (~)**
 
 **Objective:** Use `~` to traverse commit history.
@@ -233,7 +232,7 @@ git branch -f main C6
 git branch -f bugFix C0
 ```
 
-![screenshort](img\image-9.png)
+![screenshort](img/image-9.png)
 
 2. **Check Out Commit `C1`**
 
@@ -241,7 +240,7 @@ git branch -f bugFix C0
 git checkout C1
 ```
 
-![screenshort](img\image-10.png)
+![screenshort](img/image-10.png)
 
 ### **2.4 Reversing Changes in Git**
 
@@ -310,7 +309,7 @@ git checkout main
 git cherry-pick C4 
 ```
 
-![screenshort](img\image-11.png)
+![screenshort](img/image-11.png)
 
 ### **4.2 Juggling Commits**
 
@@ -350,7 +349,7 @@ git branch -f main caption
 git checkout main
 ```
 
-![screenshort](img\image-12.png)
+![screenshort](img/image-12.png)
 
 2. **Cherry-Pick Commit `C2`**
 
@@ -364,7 +363,7 @@ git checkout main
  git commit --amend 
 ```
 
-![screenshort](img\image-13.png)
+![screenshort](img/image-13.png)
 
 4. **Cherry-Pick Commit `C3`**
 
