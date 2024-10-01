@@ -422,7 +422,7 @@ git describe
  git rebase main bugFix 
 ```
 
-![screenshort](img\image-14.png)
+![screenshort](img/image-14.png)
 
 2. **Rebase `side` onto `bugFix`**
 
