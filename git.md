@@ -196,13 +196,7 @@ git rebase main
 
 **Objective:** Check out a specific commit, resulting in a detached HEAD state.
 
-1. **List Commit History**
-
-```bash
-git log --online
-```
-
-2. **Check Out Commit `C4`**
+1. **Check Out Commit `C4`**
 
 ```bash
 git checkout C4
@@ -228,7 +222,7 @@ git checkout C4^
 1. **Force Move Branches to Specific Commits**
 
 ```bash
-git branch -f main C6
+git branch -f main C4
 git branch -f bugFix C0
 ```
 
@@ -276,9 +270,15 @@ git revert pushed
 git cherry-pick C3 C4 C7
 ```
 
+![alt text](img/image-16.png)
+
 ### **3.2 Interactive Rebase Intro**
 
 **Objective:** Modify commit history interactively.
+
+Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is often used as an alternative to merging. Rebasing a branch updates one branch with another by applying the commits of one branch on top of the commits of another branch.
+
+![alt text](img/image-17.png)
 
 1. **Start Interactive Rebase**
 
@@ -286,9 +286,12 @@ git cherry-pick C3 C4 C7
 git rebase -i main~4 --aboveAll
 ```
 
+![alt text](img/image-18.png)
+
 2. **Modify the Rebase Plan**
 
   - **Remove Commit `C2`**
+
   - **Move Commit `C5` Up**
 
 ## **4. Advanced Commit Manipulation**
@@ -375,10 +378,17 @@ git checkout main
 
 **Objective:** Tag specific commits for reference.
 
+Tagging is used to mark a commit stage as important. We can tag a commit for future references. Typically, this is used to mark release point of a project
+Eg: v1.0
+
+![alt text](img/image-1.png)
+
 1. **Create Tags `v0` and `v1`**
 
 ```bash
- git tag v0 C1 git tag v1 C2
+ git tag v0 C1 
+
+ git tag v1 C2
 ```
 
 2. **Check Out Tag `v1`**
