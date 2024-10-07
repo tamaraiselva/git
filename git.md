@@ -180,7 +180,7 @@ git commit -m "Add multiply function in main.py"
 ```
 
 ![screenshort](img/image-4.png)
-
+L
 4. **Switch Back to `bugFix` Branch and Rebase onto `main`**
 
 ```bash
